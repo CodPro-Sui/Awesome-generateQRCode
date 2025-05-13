@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generate Fantastic QR Code || CodPro Sui</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- title -->
+    <h1>Generate QR Code</h1>
+    <!-- tools -->
+    <div class="tools">
+      <div>
+        <div><span>Type: </span><select id="types">
+            <option value="rounded">Default</option>
+            <option value="square">square</option>
+          </select></div>
+        <div><span>Background: </span><input type="color" id="bgcolor" value="#ffffff" /></div>
+        <div><span>Color: </span><input type="color" id="color" /></div>
+      </div>
+      <div class="ll">
+        <div><span>Title: </span><input type="text" id="title" value="fantasticQrCode" /></div>
+        <div><span>Description: </span><input type="text" id="dis" value="Here is your stylish QR code!" /></div>
+        <div><span>Extension: </span><select id="exten">
+          <option value="png">png</option>
+          <option value="jpg">jpg</option>
+        </select></div>
+      </div>
+    </div>
+    <!-- user enter txt -->
+    <div class="userTxt">
+      <input type="text" id="enterText" value="CodPro Sui" placeholder="Enter Text to QR" />
+    </div>
+    <!-- QR Code -->
+    <div id="qr"></div>
+    <!-- share and Download feature-->
+    <div class="btns">
+      <button type="submit" id="download">Download</button>
+      <button type="submit" id="share">Share</button>
+    </div>
+  </div>
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

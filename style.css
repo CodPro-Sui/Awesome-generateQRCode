@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  min-height: 100dvh;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, #32B897, #7232B8);
+  padding: 10px 0;
+}
+.container div{
+  margin: 5px auto;
+}
+
+h1 {
+  color: #D8E8E4;
+  padding: 5px 20px;
+  filter: drop-shadow(0 0 8px #D8E8E4);
+  border-radius: 4px;
+  backdrop-filter: blur(15px);
+  letter-spacing: .40px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .16);
+  background: rgba(255, 255, 255, .1);
+}
+
+.userTxt {
+  width: 70%;
+}
+
+.userTxt input {
+  width: 100%;
+  backdrop-filter: blur(15px);
+  letter-spacing: .40px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .16);
+  outline: none;
+  border: 1px solid #D2D3DC;
+  border-radius: 8px;
+  height: 40px;
+  background: #52535257;
+  font-size: 1.1em;
+  padding: 0 3px;
+  letter-spacing: .3px;
+  color: #FFFFFF;
+}
+.userTxt input::placeholder{
+  color: #D2D3DC;
+}
+#qr{
+  width: 250px;
+  height: 250px;
+  display: flex;
+justify-content: center;
+align-items: center;
+  border: 1px solid #D2D3DC;
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+}
+.btns button{
+  padding: 6px 30px;
+  margin: auto 20px;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid #D2D3DC;
+  letter-spacing: .2px;
+  font: 1.1em;
+  transition: all .3s ease;
+}
+.btns button:hover{
+  color: #DF30CF;
+  text-shadow: 0 0 7px #DF30CF;
+  border: 1px solid #DF30CF;
+}
+.tools{
+  display: flex;
+  padding: 0 0 0 8px;
+}
+.tools .ll{
+  border-left: 3px solid #04275A;
+  padding-left: 5px;
+  margin-left: 3px;
+}
+span{
+  color: #DAE6E4;
+}
+.tools div input{
+  width: 30px;
+  height: 30px;
+}
+.tools div select{
+  outline: none;
+  background: #D9D9D973;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #F6F6F6;
+  border: none;
+}
+#title,#dis{
+  width: 160px;
+  letter-spacing: .3px;
+  font-size: 1em;
+  padding: 2px 4px;
+  border-radius: 5px;
+  border: 1px solid #171826;
+  background: #A8A9B64D;
+  outline: none;
+  margin: 3px;
+  color: #EAEBED;
+  transition: all 0.3s ease;
+}
+#title:hover,#dis:hover{
+  border: 1px solid #AEC9BE;
+  box-shadow: 0 0 0 3px #AEC9BE61;
+}
